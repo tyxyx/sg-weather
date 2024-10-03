@@ -1,17 +1,47 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+
+// import WeatherMenu from './components/WeatherMenu.vue'
 </script>
 
+<!-- // <script>
+// export default {
+//   components: { WeatherMenu },
+//     data() {
+//         return {
+//             menuitems: ["Temperature", "2-hourly", "24-hour", "4-days"],
+//             current_active: "Temperature"
+//         };
+//     }, // data
+//     methods: {
+//         do_menu_click(item) {
+//             this.current_active = item;
+//         }
+//     },
+//   };
+// </script> -->
+
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
+  <router-view></router-view>
+  <!-- <div class="p-3">
+    <WeatherMenu :menuitems="menuitems" :activeitem="current_active" @click="do_menu_click"></WeatherMenu> -->
+
+    <!-- <temperature v-if='current_active === "Temperature"'></temperature>
+
+    <forecast_2_hourly v-if='current_active === "2-hourly"'></forecast_2_hourly>
+
+    <forecast_24_hour v-if='current_active === "24-hour"'></forecast_24_hour>
+
+    <forecast_4_days v-if='current_active === "4-days"'></forecast_4_days> -->
+
+    <!-- <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  </div> -->
+  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
 <style scoped>
